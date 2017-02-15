@@ -1,4 +1,4 @@
 select count(i.InvoiceLineId)
-from invoice_items i
+from InvoiceLine i
 where i.InvoiceLineId = 37;
 

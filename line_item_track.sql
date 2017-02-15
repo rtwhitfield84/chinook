@@ -1,4 +1,4 @@
 select t.Name
-from tracks t 
-inner join invoice_items i
+from Track t 
+inner join InvoiceLine i
 on i.TrackId = t.TrackId

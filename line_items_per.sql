@@ -1,4 +1,4 @@
 select count(i.InvoiceLineId)
-from invoice_items i
+from InvoiceLine i
 group by i.InvoiceLineId
 
