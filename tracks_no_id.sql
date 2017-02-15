@@ -1,2 +1,2 @@
-select tracks.Name, albums.Title, media_types.name, genres.name
-from tracks, albums, media_types, genres
+select Track.Name, Album.Title, MediaType.name, Genre.name
+from Track, Album, MediaType, Genre
