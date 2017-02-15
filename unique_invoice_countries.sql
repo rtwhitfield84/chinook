@@ -1,2 +1,1 @@
-select distinct i.BillingCountry
-from invoices i
+select distinct i.BillingCountry from Invoice i

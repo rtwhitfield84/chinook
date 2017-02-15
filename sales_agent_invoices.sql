@@ -1,3 +1,3 @@
 select e.FirstName, e.LastName, i.invoiceId
-from employees e, invoices i, customers c
+from Employee e, Invoice i, Customer c
 where c.SupportRepId = e.EmployeeId

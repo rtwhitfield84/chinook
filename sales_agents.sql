@@ -1,3 +1,3 @@
 select e.FirstName, e.LastName,e.Title
-from employees e
+from Employee e
 where e.Title = 'Sales Support Agent'
