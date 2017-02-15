@@ -1,3 +1,3 @@
 select c.FirstName, c.LastName, i.InvoiceId, i.InvoiceDate,i.BillingCountry
-from customers c, invoices i
+from Customer c, Invoice i
 where c.Country = 'Brazil'
