@@ -1,4 +1,4 @@
-select t.Name,SUM(il.Quantity) AS TracksSold
+select t.Name,SUM(il.Quantity) TracksSold
 from InvoiceLine il, Invoice i
 inner join Track t 
 on t.TrackId = il.TrackId 
