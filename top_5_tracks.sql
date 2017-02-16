@@ -1,6 +1,6 @@
-select t.Name,SUM(il.Quantity) AS TracksSold
+select t.Name,sum(il.Quantity) '# Sold'
 from InvoiceLine il, Invoice i
 inner join Track t 
 on t.TrackId = il.TrackId 
 group by t.Name 
-order by TracksSold desc limit 5
+order by sum(il.Quantity) desc limit 5
