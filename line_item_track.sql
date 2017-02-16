@@ -1,4 +1,4 @@
-select t.Name
-from Track t 
+select InvoiceLineId, t.Name 'Track'
+from Track t
 inner join InvoiceLine i
-on i.TrackId = t.TrackId
+on i.TrackId == t.TrackId

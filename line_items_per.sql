@@ -1,4 +1,4 @@
-select count(i.InvoiceLineId)
-from InvoiceLine i
-group by i.InvoiceLineId
+select InvoiceId, count(Quantity)
+from InvoiceLine 
+group by InvoiceId
 
