@@ -4,5 +4,6 @@ inner join
 Customer c
 on c.CustomerId == i.CustomerId
 inner join Employee e
-on e.EmployeeId = c.SupportRepId 
-group by e.EmployeeId
+on e.EmployeeId = c.SupportRepId
+where i.InvoiceDate like '%2009%' 
+group by e.EmployeeId limit 1 
